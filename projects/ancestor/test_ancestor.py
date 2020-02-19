@@ -12,15 +12,28 @@ class Test(unittest.TestCase):
        \ / \   \
         6   7   9
 
-        [3, 1, 10] expecting
-        [6]
-        [3,5]
-        [1,2,4]
-        [10]
+        [] target 8
+        [(4,8), (11,8)]
+
+
 
         [] make child array, target 9
         [8] loop through and add to parent array
         [4,11]  4<11 if no matches, retrn less num
+
+        [] 6 target
+        [3,6, 5,6]PARENT
+        [1,2,4]
+        [10]
+
+        [] 3 TARGET
+        [1,3 ,2,3]
+        [10]
+
+        [] TARGET 7
+        [5]
+        [4]
+        []
         
     '''
     def test_earliest_ancestor(self):
